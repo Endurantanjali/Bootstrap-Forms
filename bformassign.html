@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+</head>
+<body style="padding:20px;">
+
+    <h2 style="text-align:center;">User Information</h2>
+  <form>
+    <!--Floating element-->
+    <label for="name" class="form-label">Name</label>
+    <div class="form-floating">
+       
+        <input type="text" id="floatingname" class="form-control" placeholder="Enter your name">
+        <label for="floatingnmail">Enter your Name</label>
+       </div>
+    <br>
+
+    <!--Inline forms-->
+    <div class="row">
+        <div class="col input-group">
+            
+            <input type="password" class="form-control" placeholder="Enter email Id" name="pswd">
+            <span class="input-group-text">@example.com</span>
+             </div>
+        <div class="col">
+        <input type="number" class="form-control" placeholder=" Enter your Mobile number" name="number">
+        </div>
+    
+    </div>
+    </div>
+
+    <br>
+
+   
+  <!--Validation-->
+    <div >
+       
+        <form action="" class="was-validated">
+        <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.
+        </div>
+        
+        <div class="invalid-feedback">Please fill out this field.
+        </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Click</button>
+        </form>
+        </div>
+      <br>
+      <label for="pwd"class="form-label">Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      
+      <br>
+
+      <!--Radio Buttons-->
+      <label for="radiobox" class="form-label">Choose your Gender</label>
+      <div class="form-check">
+       <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+       <label class="form-check-label" for="radio1">Male</label>
+   <br>
+       <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>
+       <label class="form-check-label" for="radio1">Female</label>
+   <br>
+       <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3" checked>
+       <label class="form-check-label" for="radio1">Other</label>
+      </div>  
+  <br>
+
+<!--Textarea-->
+  <label for="address" class="form-label">Enter your Address</label>
+  <br>
+  <textarea rows="5" cols="50" name="Description" id="Description" placeholder="Enter your Residential Address"></textarea>
+<br>
+
+<!--Checkbox-->
+<input class="form-check-input" type="checkbox" id="check1" name="I agree Information given is correct" value="something" checked>
+<label class="form-check-label">"I agree Information given is correct" <br> Check this box to continue</label>
+
+<br> <br>
+
+<button type="submit" class="btn btn-success">Submit your response</button>
+
+
+  </form>  
+</body>
+</html>
